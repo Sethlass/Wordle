@@ -20,7 +20,7 @@ public class WordleServer {
     "chair", "breed", "cycle", "curve", "solve"
 };
     private static String secretWord; // The word that needs to be guessed
-    private static ServerSocket serverSocket; // Creates socket
+    private static ServerSocket serverSocket; // Creates socket created by
 
     /**
      * The 'main' method is responsible for starting the server, allowing a client to connect to it,
@@ -30,7 +30,7 @@ public class WordleServer {
      */
     public static void main(String[] args) throws IOException {
 
-        serverSocket = new ServerSocket(PORT); // Opens socket for client connection
+        serverSocket = new ServerSocket(PORT); // Opens socket for client connection seth
         System.out.println("Server is listening on port " + PORT);
 
         try (Socket socket = serverSocket.accept(); // Indicates a connection was made
@@ -39,7 +39,7 @@ public class WordleServer {
             
             System.out.println("Client connected");
             selectRandomWord(); // Chooses word from the word bank
-            String inputLine; // Gets client input
+            String inputLine; // Gets client input lassiter
 
             while ((inputLine = in.readLine()) != null) { // While loop lasts until every character in the 'inputLine' is read
                 String feedback = generateFeedback(inputLine.toLowerCase()); // Converts to lowercase for the print
