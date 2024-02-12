@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import simpledialog, messagebox
-import socket
+import socket 
 
 '''
 The '__init__' is responsible for creating the main GUI window where the game will be played,
@@ -9,7 +9,7 @@ and connecting to the server
 '''
 class WordleClientGUI:
     def __init__(self, master):
-        self.master = master # Creates tkinter main window
+        self.master = master # Creates tkinter main window CR SL
         self.master.title("Wordle Game") # Title of the window
         self.master.configure(bg='black')  # Sets the background color of the main window
 
@@ -106,7 +106,7 @@ class WordleClientGUI:
 
 def main():
     root = tk.Tk() # Main instance of Tkinter
-    gui = WordleClientGUI(root) # Instance of the GUI
+    gui = WordleClientGUI(root) # Instance of the GUI by Seth Lassiter
     root.mainloop()
 
 if __name__ == "__main__":
