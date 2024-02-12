@@ -75,7 +75,7 @@ class WordleClientGUI:
             if feedback[i] == 'G':
                 tile['bg'] = 'green'
             elif feedback[i] == 'Y':
-                tile['bg'] = 'yellow'
+                tile['bg'] = 'yellow' #CR SL
             else:
                 tile['bg'] = 'grey'
 
@@ -98,5 +98,26 @@ class WordleClientGUI:
 root = tk.Tk()
 app = WordleClientGUI(root)
 
-# Run the application
+# Run the application CR: SL
 root.mainloop()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Created by Seth Lassiter
